@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/styles.css">
     </head>
-    <body>
+    <body class="grid-container">
         <header>
             <h1>Your App &trade;</h1>
             <div>
@@ -16,10 +16,10 @@
             <h3>John Doe</h3>
         </header>
         <nav>
-            <a><img src="icons/icon-dashboard.svg" alt="Dashboard icon"></a>
-            <a><img src="icons/icon-members.svg" alt="Members icon"></a>
-            <a><img src="icons/icon-visits.svg" alt="Visits icon"></a>
-            <a><img src="icons/icon-settings.svg" alt="Settings icon"></a>
+            <a href="#"><img src="icons/icon-dashboard.svg" alt="Dashboard icon"></a>
+            <a href="#"><img src="icons/icon-members.svg" alt="Members icon"></a>
+            <a href="#"><img src="icons/icon-visits.svg" alt="Visits icon"></a>
+            <a href="#"><img src="icons/icon-settings.svg" alt="Settings icon"></a>
         </nav>
         <main>
             <div class="main-header">
@@ -60,7 +60,7 @@
                 </section>
 
                 <!--donut chart-->
-                <section class="mobile-users">
+                <section class="mobile">
                 <h3>Mobile Users</h3>
                 <div class="donut-graph">
                     <!--donut here-->
@@ -69,7 +69,7 @@
                 </section>
             </div>
 
-            <div class="social-container">
+            <div class="social">
                 <div class="social-image">
                     <img src="icons/icon-twitter.svg" alt="Twitter logo">
                 </div>
@@ -98,7 +98,7 @@
             <section class="members">
                 <h3>New Members</h3>
                 <div class="members-container">
-                    <img src="images/member-1" class="profile-image" alt="Photo of Victoria Chambers">
+                    <img src="images/member-1.jpg" class="profile-image" alt="Photo of Victoria Chambers">
                     <div class="members-text">
                         <p>Victoria Chambers</p>
                         <a href="#">victoria.chambers80@example.com</a>
@@ -107,7 +107,7 @@
                 </div>
 
                 <div class="members-container">
-                    <img src="images/member-2" class="profile-image" alt="Photo of Dale Byrd">
+                    <img src="images/member-2.jpg" class="profile-image" alt="Photo of Dale Byrd">
                     <div class="members-text">
                         <p>Dale Byrd</p>
                         <a href="#">dale.byrd52@example.com</a>
@@ -116,7 +116,7 @@
                 </div>
 
                 <div class="members-container">
-                    <img src="images/member-3" class="profile-image" alt="Photo of Dawn Wood">
+                    <img src="images/member-3.jpg" class="profile-image" alt="Photo of Dawn Wood">
                     <div class="members-text">
                         <p>Dawn Wood</p>
                         <a href="#">dawn.wood16@example.com</a>
@@ -125,7 +125,7 @@
                 </div>
 
                 <div class="members-container">
-                    <img src="images/member-4" class="profile-image" alt="Photo of Dan Oliver">
+                    <img src="images/member-4.jpg" class="profile-image" alt="Photo of Dan Oliver">
                     <div class="members-text">
                         <p>Dan Oliver</p>
                         <a href="#">dan.oliver82@example.com</a>
@@ -172,8 +172,10 @@
                 <!--custom CSS toggle code, in external link-->
                 <select class="form-field" id="timezone">
                     <option disabled selected>Select a Timezone</option>
-                    <option>Eastern</option>
-                    <!--look for tz code-->
+                    <option value="EST">Eastern</option>
+                    <option value="CST">Central</option>
+                    <option value="MST">Mountain</option>
+                    <option value="PST">Pacific</option>
                 </select>
 
                 <div class="settings-button">
