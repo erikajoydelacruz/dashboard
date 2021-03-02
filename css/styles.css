@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -9,8 +11,9 @@
 ==================================== */
 
 body {
-    font-family: Roboto, sans-serif;
+    font-family: 'Merriweather', serif;
     color: lightgrey;
+    background-color: #fff;
 }
 
 
@@ -32,9 +35,12 @@ img {
 
 h3 {
     text-transform: uppercase;
-    font-weight: lighter;
+    font-weight: 400;
 }
 
+.profile-image {
+    border-radius: 50%;
+}
 /* ================================= 
     header
 ==================================== */
@@ -43,10 +49,10 @@ header {
     grid-area: header;
     display: flex;
     align-items: center;
-    background-color: rgb(152, 127, 197);
-    padding: 20px;
-    color: white;
     justify-content: space-around;
+    background-color: #7477bf;
+    padding: 0 0 1rem;
+    color: #fff;
 }
 
 
@@ -61,12 +67,13 @@ header {
 }
 
 .bold {
-    font-weight: bold;
+    font-weight: 700;
 
 }
 .thin {
-    font-weight: lighter;
+    font-weight: 300;
 }
+
 /* ================================= 
     nav 
 ==================================== */
@@ -74,11 +81,17 @@ header {
 nav {
     grid-area: nav;
     display: flex;
-    justify-content: space-around;
-    align-items: center; 
-    background-color: rgb(108, 86, 143);
-    padding: 20px;
+    justify-content: space-evenly;
+    align-items: baseline; 
+    background-color: #4d4c72;
+    padding: 0;
 }
+
+nav a {
+    padding: 10px;
+    margin: 0;
+}
+
 
 
 /* ================================= 
@@ -89,10 +102,37 @@ nav {
 main {
     grid-area: main;
     display: grid;
+    grid-template-areas:
+        "dashboard"
+        "traffic"
+        "daily-traffic"
+        "mobile-users"
+        "social-stats"
+        "new-members"
+        "recent-activity"
+        "message-user"
+        "settings"
 }
 
-.profile-image {
-    border-radius: 50%;
+.dashboard {
+    grid-area: dashboard;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+    display: inline;
+
+}
+
+.dash-container {
+    display: flex;
+    align-items: center;
+    background-color: #fafafa;
+    margin: 20px;
+    padding: 1px;
+    border: 1px solid lightgray;
+    height: 3rem;
+}
+
+.dash-search {
 }
 
 .social {
@@ -135,18 +175,18 @@ media query
     }
 
     .traffic,
-    .social {
+    .social-stats {
         grid-column: 1 / span 2;
     }
 
-    .daily, 
-    .members,
-    .message{
+    .daily-traffic, 
+    .new-members,
+    .message-user{
         grid-column: 1 / span 1;
     }
 
-    .mobile,
-    .activity,
+    .mobile-users,
+    .recent-activity,
     .settings {
         grid-column: 2 / span 1;
     }
