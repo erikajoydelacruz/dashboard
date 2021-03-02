@@ -2,8 +2,9 @@
 <html>
     <head>
         <title>Dashboard</title>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body class="grid-container">
         <header>
@@ -12,20 +13,20 @@
                 <img src="icons/icon-bell.svg" alt="Bell icon" class="bell">
                 <div id="notifications"></div>
             </div>
-            <img src="images/member-1.jpg" alt="Member photo" class="profile-image">
-            <h3>John Doe</h3>
+            <img src="images/member-1.jpg" alt="Member photo" class="profile-image" id="user-image">
+            <h3 id="head-name">Victoria Chambers</h3>
         </header>
         <nav>
-            <a href="#"><img src="icons/icon-dashboard.svg" alt="Dashboard icon"></a>
-            <a href="#"><img src="icons/icon-members.svg" alt="Members icon"></a>
-            <a href="#"><img src="icons/icon-visits.svg" alt="Visits icon"></a>
-            <a href="#"><img src="icons/icon-settings.svg" alt="Settings icon"></a>
+            <a href="#"><img src="icons/icon-dashboard.svg" alt="Dashboard icon" class="nav-img"></a>
+            <a href="#"><img src="icons/icon-members.svg" alt="Members icon" class="nav-img"></a>
+            <a href="#"><img src="icons/icon-visits.svg" alt="Visits icon" class="nav-img"></a>
+            <a href="#"><img src="icons/icon-settings.svg" alt="Settings icon" class="nav-img"></a>
         </nav>
         <main>
-            <div class="main-header">
+            <div class="dashboard">
                 <h2 class="headline">Dashboard</h2>
-                <div class="main-header-search">
-                    <input type="search" placeholder="Search...">
+                <div class="dash-container">
+                    <input type="search" placeholder="Search..." class="dash-search">
                 </div>
             </div>
             
@@ -51,7 +52,7 @@
                 </section>
 
                 <!--bar graph-->
-                <section class="daily">
+                <section class="daily-traffic">
                     <h3>Daily Traffic</h3>
                     <div class="widget-container-half">
                         <!--bar graph here-->
@@ -60,7 +61,7 @@
                 </section>
 
                 <!--donut chart-->
-                <section class="mobile">
+                <section class="mobile-users">
                 <h3>Mobile Users</h3>
                 <div class="donut-graph">
                     <!--donut here-->
@@ -69,7 +70,7 @@
                 </section>
             </div>
 
-            <div class="social">
+            <div class="social-stats">
                 <div class="social-container">
                     <div class="social-image">
                         <img src="icons/icon-twitter.svg" alt="Twitter logo">
@@ -101,7 +102,7 @@
                 </div>
             </div>
 
-            <section class="members">
+            <section class="new-members">
                 <h3>New Members</h3>
                 <div class="members-container">
                     <img src="images/member-1.jpg" class="profile-image" alt="Photo of Victoria Chambers">
@@ -140,7 +141,7 @@
                 </div>
             </section>
 
-            <section class="activity">
+            <section class="recent-activity">
                 <h3>Recent Activity</h3>
                 <div class="activity-container">
                     <img src="images/member-1.jpg" class="profile-image" alt="Photo of Victoria Chambers">
@@ -167,7 +168,7 @@
                 </div>
             </section>
 
-            <section class="message">
+            <section class="message-user">
                 <h3>Message User</h3>
                 <form class="widget-container">
                     <input type="text" placeholder="Search for user" class="form-field" id="userField">
