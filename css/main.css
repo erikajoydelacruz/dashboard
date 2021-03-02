@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+body {
+    font-family: 'Poppins', serif;
+    color: rgb(110, 110, 110);
+    background-color: #fff;
+}
+
+.grid-container {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header"
+        "nav"
+        "main";
+}
+
+/* ================================= 
+    img
+==================================== */
+
+img {
+    height: 50px;
+    width: 50px;
+}
+
+.profile-image {
+    border-radius: 50%;
+}
+
+
+/* ================================= 
+    header
+==================================== */
+
+header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #7477bf;
+    padding: 1rem;
+    color: #fff;
+}
+
+.bold {
+    font-weight: 500;
+
+}
+.thin {
+    font-weight: 200;
+}
+
+
+.bell {
+    height: 30px;
+    width: 30px;
+}
+
+#head-name {
+    color: #fff;
+    font-weight: 200;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+/* ================================= 
+    nav
+==================================== */
+
+nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #4d4c72;
+    padding: 0;
+}
+
+.nav-img {
+    padding: 10px;
+    margin: 10px;
+}
+
+
+/* ================================= 
+    dashboard
+==================================== */
+
+.dashboard {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    background-color: #fafafa;
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+.headline {
+    padding: 20px 70px 20px 20px;
+    background-color: #fff;
+    border-right: 1px solid rgb(238, 238, 238);
+    font-weight: 400;
+}
+
+.dash-search {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* ================================= 
+    main
+==================================== */
+
+h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+
+/* ================================= 
+    traffic
+==================================== */
+
+
+.traffic ul {
+    display: flex;
+    float: right;
+    list-style: none;
+
+}
+
+
+
+
+
+
+/* ================================= 
+   media query
+==================================== */
+
+@media (min-width: 768px) {
+
+    nav {
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
