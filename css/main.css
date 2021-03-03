@@ -82,6 +82,7 @@ header {
 nav {
     grid-area: nav;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     background-color: #4d4c72;
     padding: 0;
@@ -127,23 +128,93 @@ h3 {
     font-weight: 400;
 }
 
+main {
+    grid-area: main;
+}
 
 /* ================================= 
     traffic
 ==================================== */
 
 
-.traffic ul {
+.traffic-header {
     display: flex;
-    float: right;
-    list-style: none;
+    justify-content: space-between;
+    margin: 10px;
+}
 
+.traffic-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+}
+
+.traffic li {
+    margin: 0 15px;
+    cursor: pointer;
 }
 
 
+.traffic li:nth-of-type(3) {
+    background-color: rgb(115, 221, 115);
+    color: #fff;
+    border-radius: 20px;
+    padding: 7px;
+}
 
 
+/* ================================= 
+    widgets
+==================================== */
 
+.widget-container-full, 
+.widget-container-half {
+    width: 95vw;
+}
+
+/* ================================= 
+    social
+==================================== */
+
+.social-stats {
+    display: flex;
+}
+
+.social-container {
+    border: 1px solid lightgray;
+    padding: 15px 12px;
+    margin: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+}
+
+.social-image {
+    background-color: #7477bf;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+}
+
+.social-image svg {
+    height: 50px;
+    width: 50px;
+}
+
+.social-text {
+    padding: 10px;
+}
+.social-text p:first-child {
+    font-weight: 500;
+    color: #7477bf;
+}
+
+.social-text p:last-child {
+    font-weight: 200;
+    font-size: 50px;
+}
 
 /* ================================= 
    media query
@@ -151,9 +222,47 @@ h3 {
 
 @media (min-width: 768px) {
 
+    .grid-container {
+        display: grid;
+        grid-template-columns: 55px 1fr;
+        grid-template-areas: 
+        "header header"
+        "nav main"
+    }
+
+    .widgets {
+        display: grid;
+        grid-template-columns: 49%;
+    }
+
     nav {
-        height: 100%;
         flex-direction: column;
         justify-content: flex-start;
     }
+
+    .traffic, 
+    .social-stats {
+        grid-column: 1 / span 2;
+    }
+
+    .daily-traffic,
+    .new-members,
+    .message-user {
+        grid-column: 1 / span 1;
+    }
+
+    .mobile-users,
+    .recent-activity,
+    .settings {
+        grid-column: 2 / span 1;
+    }
+
+    .widget-container-full {
+        width: 90vw;
+    }
+
+    .widget-container-half {
+        width: 45vw;
+    }
+
 }
