@@ -216,11 +216,54 @@ main {
     font-size: 50px;
 }
 
+
+/* ================================= 
+    members/activity
+==================================== */
+
+.new-members,
+.recent-activity {
+   border-top: 1px solid lightgray;
+}
+
+.settings,
+.recent-activity {
+    border-left: 1px solid lightgray;
+}
+
+.members-container,
+.activity-container {
+    border-bottom: 1px solid lightgray;
+    display: flex;
+}
+
+.members-text,
+.activity-text {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.members-text a {
+    text-decoration: none;
+}
+
+/* ================================= 
+    message
+==================================== */
+
+.widget-container {
+    display: flex;
+    flex-direction: column;
+}
+
 /* ================================= 
    media query
 ==================================== */
 
 @media (min-width: 768px) {
+
+
 
     .grid-container {
         display: grid;
@@ -232,7 +275,7 @@ main {
 
     .widgets {
         display: grid;
-        grid-template-columns: 49%;
+        grid-template-columns: 50%;
     }
 
     nav {
