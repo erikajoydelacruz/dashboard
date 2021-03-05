@@ -260,8 +260,38 @@ main {
 
 .members-text a {
     text-decoration: none;
+    color:  #7477bf;
 }
 
+.members-text,
+.activity-text {
+    margin-left: 15px;
+}
+
+.members-text {
+    margin-right: auto;
+}
+
+.activity-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.activity-text span {
+    color: #7477bf;
+}
+.members-container,
+.activity-container {
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    padding: 15px;
+    height: 100px;
+}
+
+.members-container:last-child, 
+.activity-container:last-child {
+    border-bottom: none;
+}
 
 /* ================================= 
     message
@@ -293,7 +323,7 @@ main {
 
 .button-primary,
 .button-disabled {
-    height: 40px;
+    height: 50px;
     color: white;
     border-radius: 5px;
     text-transform: uppercase;
@@ -303,9 +333,6 @@ main {
     background-color: #7477bf;
 }
 
-.button-disabled {
-    background-color:rgb(146, 146, 146)
-}
 
 input::placeholder,
 textarea::placeholder,
@@ -323,16 +350,45 @@ select {
 /* ================================= 
     settings
 ==================================== */
-label.switch-light.switch-candy {
+label.switch-light.switch-ios {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    padding: 10px;
 }
+
+label.switch-light.switch-ios strong {
+    width: 200px;
+    margin-right: 15px;
+}
+label.switch-light.switch-ios span {
+    width: 15%;
+}
+
 
 select {
     width: 95%;
     margin: 10px;
 }
+
+.button-disabled {
+    background-color:rgb(146, 146, 146)
+}
+
+.activity-text span,
+button:hover {
+    cursor: pointer;
+}
+
+.settings-button {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 0 10px;
+}
+
+.settings-button button {
+    width: 45%;
+}
+
 /* ================================= 
    media query
 ==================================== */
