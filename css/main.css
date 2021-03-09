@@ -55,6 +55,7 @@ header {
     color: #fff;
 }
 
+
 .bold {
     font-weight: 500;
 
@@ -76,8 +77,8 @@ header {
 }
 
 #notifications {
-    width: 8px;
-    height: 8px;
+    width: 5px;
+    height: 5px;
     border-radius: 50%;
     background-color: rgb(115, 221, 115);
     top: -20;
@@ -110,6 +111,26 @@ nav {
     margin: 20px;
 }
 
+
+/* ================================= 
+    alert
+==================================== */
+
+.alert-banner {
+    display: flex;
+    justify-content: space-between;
+    background-color: #7477bf;
+    color: #fff;
+    width: 95%;
+    padding: 12px;
+    font-weight: 300;
+    margin: 15px auto;
+    border-radius: 5px;
+}
+
+.alert-banner-close {
+    cursor: pointer;
+}
 /* ================================= 
     dashboard
 ==================================== */
@@ -147,6 +168,7 @@ h3 {
 
 main {
     grid-area: main;
+    display: grid;
 }
 
 /* ================================= 
@@ -194,6 +216,7 @@ main {
 .widget-container-half {
     width: 95vw;
 }
+
 
 /* ================================= 
     social
@@ -428,7 +451,7 @@ button:hover {
     .mobile-users,
     .recent-activity,
     .settings {
-        grid-column: 2 / span 1;
+        grid-column: 2 / span 1;s
     }
 
     .widget-container-full {
