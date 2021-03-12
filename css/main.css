@@ -103,7 +103,7 @@ header {
 }
 
 #user-image {
-    height: 2.5rem;  b 
+    height: 2.5rem;  
     width: 2.5rem;
 }
 
@@ -153,7 +153,7 @@ nav {
     justify-content: space-between;
     display: flex;
     flex-direction: row;
-    background-color: #f1f1f1;
+    background-color: rgb(245, 245, 245);
 }
 
 .dash-container {
@@ -260,19 +260,19 @@ canvas {
 
 .social-container {
     display: flex;
-    flex-direction: column;
-    border: 1px solid lightgray;
-    padding: 10px 80px;
+    flex-direction: row;
+    border: 1px solid rgb(216, 216, 216);
+    padding: 10px;
     margin: 10px;
     align-items: center;
-    justify-content: space-between;
-    background-color: rgb(243, 243, 243);
+    justify-content: center;
+    background-color: rgb(245, 245, 245);
 }
 
 .stats-container {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
+    flex-direction: column;
+
 }
 
 .social-image {
@@ -280,25 +280,26 @@ canvas {
     border-radius: 50%;
     padding: 10px;
     display: flex;
+    margin-right: 10px;
 }
 
 .social-image svg {
-    align-items: center;
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
 }
 
 .social-text {
     padding: 10px;
 }
 .social-text p:first-child {
-    font-weight: 500;
+    font-weight: 300;
     color: #7477bf;
+    font-size: 24px;
 }
 
 .social-text p:last-child {
     font-weight: 200;
-    font-size: 24px;
+    font-size: 40px;
 }
 
 
@@ -315,8 +316,9 @@ canvas {
 }
 
 .new-members,
-.message-user, {
-    border-right: 1px solid lightgray;
+.message-user,
+.daily-traffic {
+    border-right: 1px solid rgb(233, 232, 232);
 }
 
 .members-text a {
@@ -501,11 +503,16 @@ button:hover {
 
     .stats-container {
         display: flex;
+        flex-direction: row;
     }
 
     .social-container {
-        flex-basis: 33.33%;
         flex-direction: row;
-        
+        flex-basis: 33.33%;
+        align-items: center;
+        justify-content: center;
     }
+
 }
+
+@media (min-width: 1024px) {}
