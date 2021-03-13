@@ -68,6 +68,7 @@ header {
 .bell {
     height: 30px;
     width: 30px;
+   
 }
 
 .bell-container {
@@ -107,6 +108,23 @@ header {
     width: 2.5rem;
 }
 
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(6deg);
+    }
+    40%{
+        transform: rotate(-6deg);
+    }
+}
+
+.bell:hover {
+    animation: shake 1s ease-out forwards;
+    animation-delay: .1s;
+    cursor: pointer;
+}
 /* ================================= 
     nav
 ==================================== */
