@@ -107,6 +107,26 @@ header {
     width: 2.5rem;
 }
 
+@keyframes shake {
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+    20%,
+    60% {
+        transform: rotate(6deg);
+    }
+    40%,
+    80% {
+        transform: rotate(-6deg);
+    }
+}
+
+.bell:hover {
+    animation: shake 1s ease-out forwards;
+    animation-delay: .1s;
+    cursor: pointer;
+}
 /* ================================= 
     nav
 ==================================== */
@@ -243,6 +263,7 @@ main {
 .widget-container-full, 
 .widget-container-half {
     width: 95vw;
+    padding-right: 10px;
 }
 
 canvas {
@@ -349,6 +370,10 @@ canvas {
 .members-container:last-child, 
 .activity-container:last-child {
     border-bottom: none;
+}
+
+.arrow {
+    display: none;
 }
 
 /* ================================= 
@@ -532,6 +557,11 @@ button:hover {
         margin-right: auto;
         text-align: left;
         margin-left: 10px;
+    }
+
+    .arrow {
+        display: flex;
+        flex-direction: row;
     }
 
   
