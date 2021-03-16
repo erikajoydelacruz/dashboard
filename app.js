@@ -1,4 +1,10 @@
 const alertBanner = document.getElementById("alert");
+const trafficCanvas = document.getElementById('traffic-chart');
+const dailyCanvas = document.getElementById("daily-chart");
+const mobileCanvas = document.getElementById("mobile-chart");
+const send = document.getElementById("send");
+const user = document.getElementById("userField");
+const message = document.getElementById("messageField");
 
 alertBanner.innerHTML = 
     `
@@ -15,9 +21,6 @@ alertBanner.addEventListener('click', e => {
     }
 
 });
-
-
-const trafficCanvas = document.getElementById('traffic-chart');
 
 let trafficData = {
     labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
@@ -51,9 +54,6 @@ let trafficChart = new Chart(trafficCanvas, {
     options: trafficOptions
 });
 
-
-const dailyCanvas = document.getElementById("daily-chart");
-
 const dailyData = {
     labels: ["S", "M", "T", "W", "R", "F", "S"],
     datasets: [{
@@ -82,8 +82,6 @@ let dailyChart = new Chart(dailyCanvas, {
     data: dailyData, 
     options: dailyOptions
 });
-
-const mobileCanvas = document.getElementById("mobile-chart");
 
 const mobileData = {
     labels: ["Desktop", "Tablet", "Phones"],
@@ -115,10 +113,6 @@ let mobileChart = new Chart(mobileCanvas, {
     options: mobileOptions
 });
 
-const send = document.getElementById("send");
-const user = document.getElementById("userField");
-const message = document.getElementById("messageField");
-
 send.addEventListener("click", (e) => {
     if (user.value === "" && message.value === "") {
         alert("Please enter a user and a message to send")
@@ -132,5 +126,4 @@ send.addEventListener("click", (e) => {
     else {
         alert("Mesage sent")
     }
-
 });
