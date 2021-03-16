@@ -417,13 +417,20 @@ canvas {
     background-color: #7477bf;
 }
 
-
 input::placeholder,
-textarea::placeholder,
-select {
+textarea::placeholder {
     font-weight: 200;
     font-family: 'Poppins', serif;
-    color: lightgray;
+    color: rgb(204, 202, 202);
+    padding-left: 10px;
+}
+
+select {
+    color: rgb(110, 110, 110);
+}
+
+textarea::placeholder{
+    padding-top: 10px;
 }
 
 .form-area:focus,
@@ -450,7 +457,7 @@ label.switch-light.switch-ios span {
 }
 
 select {
-    width: 95%;
+    width: 97%;
     margin: 10px;
 }
 
@@ -497,7 +504,8 @@ button:hover {
         flex-direction: column;
         justify-content: flex-start;
     }
-   
+    
+    
     .traffic,
     .social-stats {
         grid-column: 1 / span 2;
@@ -560,8 +568,14 @@ button:hover {
     }
 
     .arrow {
-        display: flex;
+        display: inline;
         flex-direction: row;
+        font-size: 40px;
+        font-weight: 200;
+    }
+
+    .arrow:hover {
+        cursor: pointer;
     }
 
   
