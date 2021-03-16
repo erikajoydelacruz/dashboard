@@ -40,7 +40,6 @@ img {
     border-radius: 50%;
 }
 
-
 /* ================================= 
     header
 ==================================== */
@@ -55,15 +54,13 @@ header {
     color: #fff;
 }
 
-
 .bold {
     font-weight: 500;
-
 }
+
 .thin {
     font-weight: 200;
 }
-
 
 .bell {
     height: 30px;
@@ -75,7 +72,6 @@ header {
     display: flex;
     align-items: center;
 }
-
 
 .bell-container span {
     margin-left: 20px;
@@ -91,7 +87,6 @@ header {
     border-radius: 50%;
     position: absolute;
     background-color: rgb(115, 221, 115);
-
 }
 
 #head-name {
@@ -127,6 +122,7 @@ header {
     animation-delay: .1s;
     cursor: pointer;
 }
+
 /* ================================= 
     nav
 ==================================== */
@@ -144,7 +140,6 @@ nav {
     padding: 10px;
     margin: 20px;
 }
-
 
 /* ================================= 
     alert
@@ -165,6 +160,7 @@ nav {
 .alert-banner-close {
     cursor: pointer;
 }
+
 /* ================================= 
     dashboard
 ==================================== */
@@ -193,7 +189,6 @@ nav {
     margin: 10px;
     border-radius: 5px;
     width: 40%;
-
 }
 
 /* ================================= 
@@ -221,13 +216,13 @@ main {
     border-bottom: 1px solid rgb(233, 232, 232);
 
 }
+
 .traffic h3,
 .daily-traffic h3,
 .mobile-users h3,
 .social-stats h3 {
     margin-bottom: 10px;
 }
-
 
 .traffic-header {
     display: flex;
@@ -247,14 +242,12 @@ main {
     cursor: pointer;
 }
 
-
 .traffic li:nth-of-type(3) {
     background-color: rgb(115, 221, 115);
     color: #fff;
     border-radius: 20px;
     padding: 7px;
 }
-
 
 /* ================================= 
     widgets
@@ -269,6 +262,7 @@ main {
 canvas {
     max-width: 100%;
 }
+
 /* ================================= 
     social
 ==================================== */
@@ -312,6 +306,7 @@ canvas {
 .social-text {
     padding: 10px;
 }
+
 .social-text p:first-child {
     font-weight: 300;
     color: #7477bf;
@@ -322,7 +317,6 @@ canvas {
     font-weight: 200;
     font-size: 35px;
 }
-
 
 /* ================================= 
     members/activity
@@ -365,8 +359,8 @@ canvas {
 .activity-container img {
     height: 70px;
     width: 70px;
-
 }
+
 .members-container:last-child, 
 .activity-container:last-child {
     border-bottom: none;
@@ -383,6 +377,7 @@ canvas {
 .message-user h3 {
     margin-bottom: 20px;
 }
+
 .widget-container {
     display: flex;
     flex-direction: column;
@@ -452,6 +447,7 @@ label.switch-light.switch-ios strong {
     width: 200px;
     margin-right: 15px;
 }
+
 label.switch-light.switch-ios span {
     width: 15%;
 }
@@ -486,7 +482,6 @@ button:hover {
 
 @media (min-width: 768px) {
 
-
     .grid-container {
         display: grid;
         grid-template-columns: 55px 1fr;
@@ -504,7 +499,6 @@ button:hover {
         flex-direction: column;
         justify-content: flex-start;
     }
-    
     
     .traffic,
     .social-stats {
@@ -545,6 +539,7 @@ button:hover {
         align-items: center;
         justify-content: center;
     }
+
     .daily-traffic {
         border-right: 1px solid rgb(233, 232, 232);
     }
@@ -554,6 +549,7 @@ button:hover {
         flex-direction: row;
         height: 110px;
     }
+
     .members-container img,
     .activity-container img {
         height: 55px;
@@ -573,12 +569,9 @@ button:hover {
         font-size: 40px;
         font-weight: 200;
     }
-
     .arrow:hover {
         cursor: pointer;
     }
-
-  
 }
 
 @media (min-width: 1024px) {
@@ -604,5 +597,4 @@ button:hover {
     .message-user {
         border-right: 1px solid rgb(233, 232, 232);
     }
-
 }
