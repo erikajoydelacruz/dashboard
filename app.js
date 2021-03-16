@@ -114,3 +114,23 @@ let mobileChart = new Chart(mobileCanvas, {
     data: mobileData,
     options: mobileOptions
 });
+
+const send = document.getElementById("send");
+const user = document.getElementById("userField");
+const message = document.getElementById("messageField");
+
+send.addEventListener("click", (e) => {
+    if (user.value === "" && message.value === "") {
+        alert("Please enter a user and a message to send")
+    } 
+    else if (user.value === "") {
+        alert("Please enter a user")
+    }
+    else if (message.value === "") {
+        alert("Please enter a message")
+    }
+    else {
+        alert("Mesage sent")
+    }
+
+});
